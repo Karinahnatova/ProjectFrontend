@@ -3,6 +3,7 @@ import { easyFetch } from "../../helpers/utils.js"
 import { Link } from "react-router-dom";
 import './Bestsellers.css'
 import Product from "../../pages/Product/index.jsx";
+import { baseURL } from "../../api/api.js";
 
 /**
  * Componente Bestsellers
@@ -32,7 +33,7 @@ function Bestsellers() {
   const fetchProducts = async () => {
     try {
       const data = await easyFetch({
-        url: "http://localhost:8080/API/v1/specific-products",
+        url: `${baseURL}/API/v1/specific-products`,
       });
       setProducts(data);
     } catch (error) {

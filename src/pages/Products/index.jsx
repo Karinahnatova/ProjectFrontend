@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import Product from "../Product/index.jsx";
 import { useNavigate, useSearchParams } from "react-router-dom"; // Importación de useHistory y useSearchParams para la navegación
+import { baseURL } from "../../api/api.js";
 
 /**
  * Componente de productos que muestra una lista de productos y permite filtrar por categorías.
@@ -19,13 +20,13 @@ const Products = () => {
   const [lightboxProduct, setLightboxProduct] = useState(); // Estado para almacenar el producto que se muestra en el lightbox
   const [categoryTitle, setCategoryTitle] = useState("All The Products"); // Estado para almacenar el título de la categoría
   const [searchParams] = useSearchParams(); // Hook para obtener los parámetros de búsqueda de la URL
-  const navigate = useNavigate();   // Función para la navegación
+  const navigate = useNavigate(); // Función para la navegación
 
   // fetch a los productos
   const fetchProducts = async () => {
     try {
       const data = await easyFetch({
-        url: "http://localhost:8080/API/v1/products",
+        url: `${baseURL}/API/v1/products`,
       });
       setProducts(data);
       setCategoryTitle("All The Products");
@@ -34,7 +35,7 @@ const Products = () => {
     }
   };
 
-   // Efecto para cargar los productos cuando el componente se monta y cuando cambia la navegación
+  // Efecto para cargar los productos cuando el componente se monta y cuando cambia la navegación
   useEffect(() => {
     let searchParamObject = Object.fromEntries(searchParams);
 
@@ -49,7 +50,6 @@ const Products = () => {
     };
   }, [navigate]);
 
-
   // Función para alternar el lightbox y mostrar o ocultar el producto seleccionado
   const toggleLightbox = (product) => {
     setLightboxProduct(product);
@@ -59,7 +59,7 @@ const Products = () => {
   // Función para filtrar los productos por categoría
   async function filterProducts(category) {
     const data = await easyFetch({
-      url: "http://localhost:8080/API/v1/products",
+      url: `${baseURL}/API/v1/products`,
     });
     const lc = category.toLowerCase();
     const filtered = data.filter((product) => product.category === lc);
@@ -67,7 +67,7 @@ const Products = () => {
     setCategoryTitle(category);
   }
 
-   // Renderizado condicional para mostrar el producto en el lightbox o la lista de productos
+  // Renderizado condicional para mostrar el producto en el lightbox o la lista de productos
   if (lightboxProduct) {
     return (
       <Product product={lightboxProduct} toggleLightbox={toggleLightbox} />
