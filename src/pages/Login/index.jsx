@@ -23,7 +23,7 @@ function Login() {
 
     // Realizar una solicitud POST al servidor para autenticar al usuario
     try {
-      const response = await fetch(`${baseURL}/API/v1/authenticate`, {
+      const response = await fetch(`${baseURL}/api/v1/authenticate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -120,7 +120,7 @@ const Register = () => {
     e.preventDefault();
     try {
       // Realizar una solicitud POST al servidor para registrar al usuario
-      const response = await axios.post(`${baseURL}/API/v1/user`, formData);
+      const response = await axios.post(`${baseURL}/api/v1/user`, formData);
       console.log("Usuario registrado correctamente:", response.data);
 
       // Verificar si la respuesta del servidor es exitosa

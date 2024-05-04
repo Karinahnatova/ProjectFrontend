@@ -33,7 +33,7 @@ function Bestsellers() {
   const fetchProducts = async () => {
     try {
       const data = await easyFetch({
-        url: `${baseURL}/API/v1/specific-products`,
+        url: `${baseURL}/api/v1/specific-products`,
       });
       setProducts(data);
     } catch (error) {

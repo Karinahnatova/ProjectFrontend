@@ -24,9 +24,11 @@ const Products = () => {
 
   // fetch a los productos
   const fetchProducts = async () => {
+    debugger;
+    let url = `${baseURL}/api/v1/products`;
     try {
       const data = await easyFetch({
-        url: `${baseURL}/API/v1/products`,
+        url: url,
       });
       setProducts(data);
       setCategoryTitle("All The Products");
@@ -37,6 +39,7 @@ const Products = () => {
 
   // Efecto para cargar los productos cuando el componente se monta y cuando cambia la navegación
   useEffect(() => {
+    debugger;
     let searchParamObject = Object.fromEntries(searchParams);
 
     if (searchParamObject?.category) {
@@ -59,7 +62,7 @@ const Products = () => {
   // Función para filtrar los productos por categoría
   async function filterProducts(category) {
     const data = await easyFetch({
-      url: `${baseURL}/API/v1/products`,
+      url: `${baseURL}/api/v1/products`,
     });
     const lc = category.toLowerCase();
     const filtered = data.filter((product) => product.category === lc);
