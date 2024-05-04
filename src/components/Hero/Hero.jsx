@@ -13,7 +13,7 @@ const Hero = () => {
 
         image: {
             id: uuidv4(),
-            imgUrl: "src/assets/img/hero/hero3.jpg",
+            imgUrl: "public/assets/img/hero/hero3.jpg",
             imgUrlMobile: "src/assets/img/hero/hair_coconut_conditioner.jpg",
             altText: "imagen_modelo_con_producto",
         },

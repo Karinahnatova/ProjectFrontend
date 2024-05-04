@@ -66,7 +66,7 @@ function Bestsellers() {
           {/* Enlace para ver todos los productos */}
           <span className="Bestsellers-span-link"> 
               <p className="Bestsellers-span-link-p"><Link to="/products">View All The Products</Link> </p>
-              <picture><img className="Bestsellers-img-arrow" src="/src/assets/img/icons/arrow_forward.svg" alt="icon_arrow_forward" loading="lazy" /></picture>
+              <picture><img className="Bestsellers-img-arrow" src="/public/assets/assets/img/icons/arrow_forward.svg" alt="icon_arrow_forward" loading="lazy" /></picture>
           </span>
           {/* Contenedor de los productos */}
           <div className="Products">
