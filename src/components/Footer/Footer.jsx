@@ -36,22 +36,22 @@ const Footer = () => {
       icons: [
         {
           id: uuidv4(),
-          imgSrc: "src/assets/img/icons/instagram.svg",
+          imgSrc: "assets/img/icons/instagram.svg",
           altText: "instagram_icon"
         },
         {
           id: uuidv4(),
-          imgSrc: "src/assets/img/icons/pinterest.svg",
+          imgSrc: "assets/img/icons/pinterest.svg",
           altText: "pinterest_icon"
         },
         {
           id: uuidv4(),
-          imgSrc: "src/assets/img/icons/twitter.svg",
+          imgSrc: "assets/img/icons/twitter.svg",
           altText: "twitter_icon"
         },
         {
           id: uuidv4(),
-          imgSrc: "src/assets/img/icons/facebook.svg",
+          imgSrc: "assets/img/icons/facebook.svg",
           altText: "facebook_icon"
         },
       ]

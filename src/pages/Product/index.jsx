@@ -36,7 +36,7 @@ const Product = ({ product, toggleLightbox }) => {
             toggleLightbox();
           }}
         >
-          <img src="/src/assets/img/icons/arrow_back.svg" alt="arrow_forward" />
+          <img src="assets/img/icons/arrow_back.svg" alt="arrow_forward" />
         </picture>
       </div>
 

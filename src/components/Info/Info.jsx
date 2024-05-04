@@ -11,28 +11,28 @@ const Info = () => {
     const infoData = [
         {
             id: uuidv4(),
-            iconSrc: "src/assets/img/icons/package.svg",
+            iconSrc: "assets/img/icons/package.svg",
             altText: "package_icon",
             tittle: "Free Shipping",
             text: "For Shipping Orders Over 75€"
         },
         {
             id: uuidv4(),
-            iconSrc: "src/assets/img/icons/credit_card.svg",
+            iconSrc: "assets/img/icons/credit_card.svg",
             altText: "credit_card_icon",
             tittle: "Secure Payment",
             text: "Pay With Multiple Credit Cards"
         },
         {
             id: uuidv4(),
-            iconSrc: "src/assets/img/icons/spa.svg",
+            iconSrc: "assets/img/icons/spa.svg",
             tittle: "100% Quality Products",
             altText: "spa_flower_icon",
             text: "We Guarantee the quality of Our Products"
         },
         {
             id: uuidv4(),
-            iconSrc: "src/assets/img/icons/support.svg",
+            iconSrc: "assets/img/icons/support.svg",
             tittle: "Online Support",
             alt: "online_support_icon",
             text: "You Have Online Support 24h a day, 7 Days at Week"

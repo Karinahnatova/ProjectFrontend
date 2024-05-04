@@ -14,7 +14,7 @@ const Hero = () => {
         image: {
             id: uuidv4(),
             imgUrl: "/assets/img/hero/hero3.jpg",
-            imgUrlMobile: "src/assets/img/hero/hair_coconut_conditioner.jpg",
+            imgUrlMobile: "assets/img/hero/hair_coconut_conditioner.jpg",
             altText: "imagen_modelo_con_producto",
         },
         text: {

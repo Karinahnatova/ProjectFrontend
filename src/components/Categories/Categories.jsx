@@ -14,31 +14,31 @@ const Categories = () => {
     {
       id: uuidv4(),
       name: "Body",
-      imgUrl: "src/assets/img/categories/body.png",
+      imgUrl: "assets/img/categories/body.png",
       altText: "imgage_body_cream",
     },
     {
       id: uuidv4(),
       name: "Face",
-      imgUrl: "src/assets/img/categories/face.jpg",
+      imgUrl: "assets/img/categories/face.jpg",
       altText: "imgage_face_cream",
     },
     {
       id: uuidv4(),
       name: "Hair",
-      imgUrl: "src/assets/img/categories/hair.jpg",
+      imgUrl: "assets/img/categories/hair.jpg",
       altText: "imgage_hair_cream",
     },
     {
       id: uuidv4(),
       name: "Accesories",
-      imgUrl: "src/assets/img/categories/accesories.jpg",
+      imgUrl: "assets/img/categories/accesories.jpg",
       altText: "imgage_accesories",
     },
     {
       id: uuidv4(),
       name: "All the products",
-      imgUrl: "src/assets/img/categories/all_the_products.jpg",
+      imgUrl: "assets/img/categories/all_the_products.jpg",
       altText: "imgage_products",
     },
   ];

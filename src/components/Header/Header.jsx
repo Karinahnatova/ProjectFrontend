@@ -93,7 +93,7 @@ const Header = () => {
       <picture onClick={toggleMenu} className="Header-icon-container ">
         <img
           className="Header-menu-icon icon"
-          src="src/assets/img/icons/menu.svg"
+          src="assets/img/icons/menu.svg"
           alt="menu_icon"
         />
       </picture>
@@ -104,7 +104,7 @@ const Header = () => {
         <picture className="Header-icon-container">
           <img
             className="Header-icon"
-            src="src/assets/img/icons/favorite.svg"
+            src="assets/img/icons/favorite.svg"
             alt="menu_icon"
           />
         </picture>
@@ -113,7 +113,7 @@ const Header = () => {
           <picture className="Header-icon-container">
             <img
               className="Header-icon"
-              src="src/assets/img/icons/account.svg"
+              src="assets/img/icons/account.svg"
               alt="menu_icon"
             />
           </picture>
@@ -128,7 +128,7 @@ const Header = () => {
           <picture className="Header-icon-container">
             <img
               className="Header-icon"
-              src="src/assets/img/icons/shopping_cart.svg"
+              src="assets/img/icons/shopping_cart.svg"
               alt="menu_icon"
             />
           </picture>

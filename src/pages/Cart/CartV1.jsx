@@ -81,7 +81,7 @@ const CartDialog = () => {
           <Button onClick={closeCart}>
             <picture>
               <img
-                src="src/assets/img/icons/arrow_back.svg"
+                src="assets/img/icons/arrow_back.svg"
                 alt="icon_arrow_back"
               />
             </picture>
@@ -125,7 +125,7 @@ const CartDialog = () => {
                         >
                           <picture>
                             <img
-                              src="src/assets/img/icons/delete.svg"
+                              src="assets/img/icons/delete.svg"
                               alt="icon_trashcan"
                             />
                           </picture>

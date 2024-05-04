@@ -125,7 +125,7 @@ const Products = () => {
             <Link to="/home">
               <picture className="Lightbox-btn-arrow-back">
                 <img
-                  src="/src/assets/img/icons/arrow_back.svg"
+                  src="assets/img/icons/arrow_back.svg"
                   alt="arrow_forward"
                 />
               </picture>
@@ -151,7 +151,7 @@ const Products = () => {
                         </picture>
                         <picture className="Product-like-icon">
                           <img
-                            src="/src/assets/img/icons/favorite.svg"
+                            src="assets/img/icons/favorite.svg"
                             alt="icon_heart"
                           />
                         </picture>

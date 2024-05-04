@@ -84,7 +84,7 @@ function Bestsellers() {
                       </picture>
                       {/* Icono de wishlist */}
                       <picture className="Product-like-icon">
-                          <img src="/src/assets/img/icons/favorite.svg" alt="icon_heart" loading="lazy" />
+                          <img src="assets/img/icons/favorite.svg" alt="icon_heart" loading="lazy" />
                       </picture>
                       {/* Descuento */}
                       {product.discount === 20 && <div className="Product-discount">
